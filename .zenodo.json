@@ -1,0 +1,49 @@
+{
+  "title": "The MOND interpolation function and flat rotation curves are mutually exclusive for minimally coupled k-essence",
+  "description": "Relativistic formulations of MOND, from RAQUAL to TeVeS, couple the scalar field to matter through a conformal or disformal relation. This choice is standard but has not, to our knowledge, been justified from first principles in the literature. We show that, for a single k-essence scalar, it cannot be dropped. For a k-essence scalar with kinetic function F(X) and minimally coupled matter, so that the scalar acts on test particles only through the back-reaction of its stress-energy tensor on the metric, the circular velocity in the static spherical exterior obeys v^2 ∝ r^(-2/(2n-1)) for F = A X^n. Flat curves are attained only in the limit n → ∞, where the effective profile is ρ ∝ r^-2, an isothermal dark-matter halo. The deep-MOND interpolation μ(x) → x requires n = 3/2, for which v^2 ∝ ln r / r. The two limits are mutually exclusive, and the exclusion extends to any F whose infrared branch is X^(3/2). We further show that demanding exact flatness for arbitrary F fixes F(X) = A(√X − λ)^2 uniquely, which carries a ghost for X < λ^2 and whose μ = F' diverges rather than vanishing as x → 0. The result is not obvious: Armendariz-Picon and Lim obtained asymptotically flat curves from minimally coupled k-essence. We show that none of their configurations reaches the deep-MOND regime, and that their polytropic family reproduces our scaling law exactly, with the MOND value n = 3/2 sitting at the boundary where their curves cease to flatten. Our statement extends to non-canonical kinetic terms a no-go established by Fabri for the minimal canonical scalar, recovering that case as n = 1. A self-contained symbolic verification script (31 checks) and the script generating the figures are included in this record.",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "creators": [
+    {
+      "name": "Figueroa Torres, J. Pablo",
+      "orcid": "0009-0005-5297-8777"
+    }
+  ],
+  "keywords": [
+    "k-essence",
+    "MOND",
+    "modified gravity",
+    "scalar-tensor theories",
+    "rotation curves",
+    "no-go theorem",
+    "minimal coupling"
+  ],
+  "license": "CC-BY-4.0",
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.22216334",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.5281/zenodo.21764888",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.5281/zenodo.22166062",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.5281/zenodo.20301769",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1088/1475-7516/2005/08/007",
+      "relation": "references",
+      "scheme": "doi"
+    }
+  ]
+}
