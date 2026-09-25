@@ -2,23 +2,22 @@
 # -*- coding: utf-8 -*-
 r"""
 =======================================================================
-LOS DOS TEOREMAS DEL CORPUS — establecimiento y verificacion completa
+Symbolic verification for:
+  J. P. Figueroa Torres, "The MOND interpolation function and flat
+  rotation curves are mutually exclusive for minimally coupled k-essence"
+  (preprint, 2026).
 =======================================================================
-Fecha: 2026-09-24.
 
-T1 — TEOREMA mu  (geometrico, INDEPENDIENTE de Lambda-EG)
+T1 — mu theorem (geometric; J. P. Figueroa Torres, doi:10.5281/zenodo.22216334)
      mu(x) = x/sqrt(1+x^2) es la acumulada isotropa de cot(theta).
-     Estatus: sometido a RMF. Sobrevive aunque Lambda-EG sea falsa.
+     Se verifica aqui porque la carta la usa como referencia.
 
-T2 — NO-GO k-essence minimal  (INDEPENDIENTE de Lambda-EG; reclasificado 24-sep)
+T2 — NO-GO k-essence con acoplo minimo (Teoremas 1-2 y Corolario 1 de la carta)
      Con materia minimamente acoplada, la mu de MOND y la curva plana
-     son mutuamente excluyentes.
-     Estatus: corregido tras hallar prior art (astro-ph/0505207).
-     Clasificacion: INDEPENDIENTE. mu->x es la DEFINICION estandar del limite
-     deep-MOND, no una identificacion de Lambda-EG: si Lambda-EG fuera falsa
-     manana, el enunciado sigue siendo verdad (correccion de J.P., 24-sep).
-     Caso marginal (anadido 24-sep): en n=3/2 la masa encerrada va como ln r
-     => v^2 ∝ ln(r)/r (no r^-1 a secas); para 1/2<n<3/2 converge => kepleriana.
+     son mutuamente excluyentes. Incluye el caso marginal n=3/2
+     (v^2 ∝ ln r / r), la restriccion n>1/2, el corolario para toda F con
+     rama infrarroja X^{3/2}, y los controles contra Armendariz-Picon & Lim
+     (JCAP 0508:007, 2005; astro-ph/0505207).
 
 Cada teorema se establece en 4 bloques: HIPOTESIS -> CONSTRUCCION ->
 CONCLUSION -> CONTROLES (incl. casos degenerados y prior art).
@@ -252,7 +251,7 @@ chk("caso (a): rho ∝ r^{-2/gamma} (su texto) y r^2 rho -> 0 para 0<gamma<1",
 chk("caso (a): r^2 p_r -> const (la PRESION aplana), dado X -> X_c != 0 (verificado numericamente: u_c=0.6561, r^2 p_r -> 1.62 para gamma=1/2)",
     sp.simplify(pr_exp + 2) == 0)
 print("""
-  CONCLUSION T2 (corregida)
+  CONCLUSION T2
     Con acoplo minimo, v^2 ∝ r^{-2/(2n-1)}. La curva se aplana solo en
     n->oo, donde rho_phi -> r^-2 (halo isotermo: MATERIA OSCURA efectiva).
     Pero la mu de MOND exige n = 3/2, que da v^2 ∝ ln(r)/r (caso marginal).
@@ -260,12 +259,9 @@ print("""
     Y para planitud EXACTA, la ecuacion funcional tiene solucion unica
     F = A(sqrt(X)-lambda)^2, con fantasma en X<lambda^2 y sin limite MOND.
 
-    ESTATUS: teorema INDEPENDIENTE de Lambda-EG. Lleva mu -> x, pero eso es
-    la definicion estandar del limite deep-MOND, no un supuesto del marco.
-    (Se clasifico mal como DEPENDIENTE confundiendo input fenomenologico
-    con dependencia de Lambda-EG; corregido por J.P. el 24-sep.)
-    PRIOR ART: astro-ph/0505207 (planitud asintotica via n grande, como
-    materia oscura). Lo NUEVO aqui es la exclusion mutua con la mu de MOND.""")
+    PREVIOUS WORK: Armendariz-Picon & Lim (astro-ph/0505207) obtienen
+    curvas planas en tres familias (barotropica n->oo, Chaplygin, politropo);
+    ninguna alcanza el regimen deep-MOND (ver los controles de arriba).""")
 
 head("RESUMEN")
 n_ok = sum(1 for _, o in OK if o)
@@ -273,5 +269,5 @@ print(f"  {n_ok}/{len(OK)} PASS")
 for l, o in OK:
     if not o: print("   FALLO:", l)
 print("""
-  T1 (mu)   : INDEPENDIENTE — geometria pura, sobrevive a Lambda-EG falsa.
-  T2 (no-go): INDEPENDIENTE — no usa nada de Lambda-EG; prior art citado.""")
+  T1 (mu)   : verificado.
+  T2 (no-go): verificado (Teoremas 1-2, Corolario 1, controles externos).""")
