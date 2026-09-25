@@ -1,5 +1,7 @@
 # The MOND interpolation function and flat rotation curves are mutually exclusive for minimally coupled k-essence
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22953268.svg)](https://doi.org/10.5281/zenodo.22953268)
+
 **J. P. Figueroa Torres** · Independent Researcher, Guadalajara, Jalisco, Mexico · ORCID [0009-0005-5297-8777](https://orcid.org/0009-0005-5297-8777)
 
 ## Result
@@ -28,6 +30,10 @@ pip install sympy numpy matplotlib
 python3 DOS_TEOREMAS_2026-09-24.py   # prints "31/31 PASS"
 python3 figuras_nogo.py              # writes fig1_exponente.pdf, fig2_curvas.pdf, fig3_exacta.pdf
 ```
+
+## Cite
+
+J. P. Figueroa Torres, *The MOND interpolation function and flat rotation curves are mutually exclusive for minimally coupled k-essence*, Zenodo preprint (2026), [doi:10.5281/zenodo.22953268](https://doi.org/10.5281/zenodo.22953268).
 
 ## License
 
