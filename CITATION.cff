@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it using this metadata."
+title: "The MOND interpolation function and flat rotation curves are mutually exclusive for minimally coupled k-essence"
+authors:
+  - family-names: "Figueroa Torres"
+    given-names: "J. Pablo"
+    orcid: "https://orcid.org/0009-0005-5297-8777"
+version: "1.0.0"
+date-released: "2026-09-25"
+license: CC-BY-4.0
